@@ -31,7 +31,11 @@
 
 *GATE: Must pass before Phase 0 research. Re-check after Phase 1 design.*
 
-[Gates determined based on constitution file]
+- 레이어분리: 비즈니스 로직이 UI와 분리된 레이어로 설계되었는지 확인
+- 테스트우선: 모든 기능에 대한 테스트 계획이 포함되었는지 확인
+- 최소 의존성: 외부 패키지 사용이 최소화되었는지 검토
+- 단순함 우선: 불필요한 추상화가 없는지 확인
+- CLI도구 구현: REST API나 GUI가 범위에 포함되지 않았는지 확인
 
 ## Project Structure
 

@@ -1,50 +1,50 @@
-# [PROJECT_NAME] Constitution
-<!-- Example: Spec Constitution, TaskFlow Constitution, etc. -->
+<!-- Sync Impact Report
+Version change: N/A → 1.0.0
+List of modified principles: Added all 5 principles (레이어분리, 테스트우선, 최소 의존성, 단순함 우선, CLI도구 구현)
+Added sections: Additional Constraints, Development Workflow
+Removed sections: None
+Templates requiring updates: plan-template.md (Constitution Check), spec-template.md (no changes), tasks-template.md (task categorization)
+Follow-up TODOs: None
+-->
+# ToDo 관리 앱 Constitution
 
 ## Core Principles
 
-### [PRINCIPLE_1_NAME]
-<!-- Example: I. Library-First -->
-[PRINCIPLE_1_DESCRIPTION]
-<!-- Example: Every feature starts as a standalone library; Libraries must be self-contained, independently testable, documented; Clear purpose required - no organizational-only libraries -->
+### I. 레이어분리
+비즈니스 로직은 사용자 인터페이스와 분리된 독립 레이어에서 구현한다.
 
-### [PRINCIPLE_2_NAME]
-<!-- Example: II. CLI Interface -->
-[PRINCIPLE_2_DESCRIPTION]
-<!-- Example: Every library exposes functionality via CLI; Text in/out protocol: stdin/args → stdout, errors → stderr; Support JSON + human-readable formats -->
+### II. 테스트우선
+테스트 코드가 구현 코드 보다 먼저 작성된다. 테스트 없는 구현 코드는 허용하지 않는다.
 
-### [PRINCIPLE_3_NAME]
-<!-- Example: III. Test-First (NON-NEGOTIABLE) -->
-[PRINCIPLE_3_DESCRIPTION]
-<!-- Example: TDD mandatory: Tests written → User approved → Tests fail → Then implement; Red-Green-Refactor cycle strictly enforced -->
+### III. 최소 의존성
+외부 패키지 설치 전 반드시 필요성을 검토한다. 불필요한 의존성은 추가하지 않는다.
 
-### [PRINCIPLE_4_NAME]
-<!-- Example: IV. Integration Testing -->
-[PRINCIPLE_4_DESCRIPTION]
-<!-- Example: Focus areas requiring integration tests: New library contract tests, Contract changes, Inter-service communication, Shared schemas -->
+### IV. 단순함 우선
+지금 당장 필요하지 않는 추상화 레이어는 만들지 않는다. 명확하고 직접적인 구현을 선호한다.
 
-### [PRINCIPLE_5_NAME]
-<!-- Example: V. Observability, VI. Versioning & Breaking Changes, VII. Simplicity -->
-[PRINCIPLE_5_DESCRIPTION]
-<!-- Example: Text I/O ensures debuggability; Structured logging required; Or: MAJOR.MINOR.BUILD format; Or: Start simple, YAGNI principles -->
+### V. CLI도구 구현
+이 프로젝트는 터미널 CLI도구를 만든다. REST API 서버, GUI, 웹 인터페이스는 이 프로젝트의 범위 밖이다.
 
-## [SECTION_2_NAME]
-<!-- Example: Additional Constraints, Security Requirements, Performance Standards, etc. -->
+## Additional Constraints
 
-[SECTION_2_CONTENT]
-<!-- Example: Technology stack requirements, compliance standards, deployment policies, etc. -->
+Technology stack requirements: Python 기반 CLI 도구, 최소 의존성 준수.
 
-## [SECTION_3_NAME]
-<!-- Example: Development Workflow, Review Process, Quality Gates, etc. -->
+Compliance standards: 테스트 우선 개발, 레이어 분리.
 
-[SECTION_3_CONTENT]
-<!-- Example: Code review requirements, testing gates, deployment approval process, etc. -->
+Deployment policies: 터미널 CLI로 배포.
+
+## Development Workflow
+
+Code review requirements: 모든 코드에 테스트 포함.
+
+Testing gates: 테스트 없는 코드는 승인되지 않음.
+
+Deployment approval process: CLI 도구로서의 기능 검증.
 
 ## Governance
-<!-- Example: Constitution supersedes all other practices; Amendments require documentation, approval, migration plan -->
 
-[GOVERNANCE_RULES]
-<!-- Example: All PRs/reviews must verify compliance; Complexity must be justified; Use [GUIDANCE_FILE] for runtime development guidance -->
+Constitution supersedes all other practices; Amendments require documentation, approval, migration plan
 
-**Version**: [CONSTITUTION_VERSION] | **Ratified**: [RATIFICATION_DATE] | **Last Amended**: [LAST_AMENDED_DATE]
-<!-- Example: Version: 2.1.1 | Ratified: 2025-06-13 | Last Amended: 2025-07-16 -->
+All PRs/reviews must verify compliance; Complexity must be justified; Use [GUIDANCE_FILE] for runtime development guidance
+
+**Version**: 1.0.0 | **Ratified**: 2026-05-02 | **Last Amended**: 2026-05-02

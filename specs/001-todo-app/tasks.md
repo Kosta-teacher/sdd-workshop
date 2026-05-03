@@ -48,6 +48,12 @@
 
 **Independent Test**: 항목 추가 후 목록 조회 시 새 항목이 나타나는지 확인
 
+### Tests for User Story 1 (테스트 우선)
+
+- [ ] T007.1 [P] [US1] Write tests for add method in tests/test_repository.py
+- [ ] T008.1 [US1] Write tests for add service in tests/test_services.py
+- [ ] T009.1 [US1] Write tests for add CLI command in tests/test_cli.py
+
 ### Implementation for User Story 1
 
 - [ ] T007 [P] [US1] Implement add method in todo_lib/repository.py
@@ -64,6 +70,12 @@
 **Goal**: 사용자가 모든 ToDo 항목을 조회하고 완료/미완료/우선순위로 필터링할 수 있음
 
 **Independent Test**: 항목 추가 후 필터 없이 조회 시 모든 항목 표시, 필터 적용 시 해당 항목만 표시
+
+### Tests for User Story 2 (테스트 우선)
+
+- [ ] T011.1 [P] [US2] Write tests for list method in tests/test_repository.py
+- [ ] T012.1 [US2] Write tests for list service in tests/test_services.py
+- [ ] T013.1 [US2] Write tests for list CLI command in tests/test_cli.py
 
 ### Implementation for User Story 2
 
@@ -82,6 +94,12 @@
 
 **Independent Test**: 항목 추가 후 완료 처리 시 상태 변경 확인
 
+### Tests for User Story 3 (테스트 우선)
+
+- [ ] T015.1 [P] [US3] Write tests for mark_done method in tests/test_repository.py
+- [ ] T016.1 [US3] Write tests for mark_done service in tests/test_services.py
+- [ ] T017.1 [US3] Write tests for done CLI command in tests/test_cli.py
+
 ### Implementation for User Story 3
 
 - [ ] T015 [P] [US3] Implement mark_done method in todo_lib/repository.py
@@ -98,6 +116,12 @@
 **Goal**: 사용자가 항목 ID로 ToDo 항목을 삭제할 수 있음
 
 **Independent Test**: 항목 추가 후 삭제 시 목록에서 제거 확인
+
+### Tests for User Story 4 (테스트 우선)
+
+- [ ] T019.1 [P] [US4] Write tests for delete method in tests/test_repository.py
+- [ ] T020.1 [US4] Write tests for delete service in tests/test_services.py
+- [ ] T021.1 [US4] Write tests for delete CLI command in tests/test_cli.py
 
 ### Implementation for User Story 4
 

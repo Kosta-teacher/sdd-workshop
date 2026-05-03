@@ -8,6 +8,7 @@
 ## Clarifications
 ### Session 2026-05-03
 - Q: 우선순위 값 범위 - high/medium/low? → A: high/medium/low
+- Q: 데이터 저장 방식 - 파일/메모리? → A: 파일 (SQLite)
 
 ## User Scenarios & Testing *(mandatory)*
 
@@ -76,7 +77,7 @@
 - 빈 목록에서 조회 시도: "목록이 비어 있습니다" 메시지 표시
 - 동일한 제목의 항목 추가: 허용, ID로 구분
 - 우선순위 값은 `high`, `medium`, `low` 중 하나로 제한하며, 범위를 벗어나면 오류 메시지를 표시
-- 저장 실패 시: [NEEDS CLARIFICATION: 데이터 저장 방식 - 파일/메모리?]
+- 저장 실패 시: SQLite 파일 저장 실패 시 오류 메시지 표시
 
 ## Requirements *(mandatory)*
 

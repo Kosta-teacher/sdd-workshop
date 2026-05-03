@@ -5,6 +5,10 @@
 **Status**: Draft
 **Input**: User description: "Todo관리 앱을 만들고 싶어요. 사용자 : 터미널을 사용하는 개인 개발자 주요기능 : ToDo 항목추가 : 제목(선택) , 우선 순위(선택) 전체목록 조회 : 완료/미완료/우선순위로 필터링 가능 항목 완료처리 : 항목ID로 완료표시 항목 삭제 : 항목 ID로 삭제 기술스택은 아직 미정"
 
+## Clarifications
+### Session 2026-05-03
+- Q: 우선순위 값 범위 - high/medium/low? → A: high/medium/low
+
 ## User Scenarios & Testing *(mandatory)*
 
 ### User Story 1 - ToDo 항목 추가 (Priority: P1)
@@ -71,7 +75,7 @@
 
 - 빈 목록에서 조회 시도: "목록이 비어 있습니다" 메시지 표시
 - 동일한 제목의 항목 추가: 허용, ID로 구분
-- 우선순위 값 범위 초과: [NEEDS CLARIFICATION: 우선순위 값 범위 - high/medium/low?]
+- 우선순위 값은 `high`, `medium`, `low` 중 하나로 제한하며, 범위를 벗어나면 오류 메시지를 표시
 - 저장 실패 시: [NEEDS CLARIFICATION: 데이터 저장 방식 - 파일/메모리?]
 
 ## Requirements *(mandatory)*
